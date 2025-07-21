@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MyMontserrat';
+  src: url('/assets/fonts/Montserrat.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    line-height: 1.6; /* Высота строки */
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'MyMontserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+ul, ol {
+    list-style: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+

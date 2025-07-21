@@ -1,0 +1,102 @@
+<header>
+  <section class="upper_navbar">
+    <ul class="upper_ul_box">
+      <li><a routerLink="/guarantee">Гарантия свежести</a></li>
+      <li routerLink="/delivery">Доставка и оплата</li>
+      <li>Оптовые поставки</li>
+      <li routerLink="/contacts">Контакты</li>
+    </ul>
+    <div class="upper_contacts_box">
+      <div class="upper_contact">
+        <img src="\assets\place.png" />
+        <p>Санкт-Петербург</p>
+        <img src="\assets\Vector (10).png" />
+      </div>
+      <div class="upper_contact">
+        <img src="\assets\phone.png" />
+        <p>8 81-309-8288</p>
+      </div>
+      <div class="upper_contact">
+        <img src="\assets\bag.png" />
+        <p>Корзина</p>
+      </div>
+    </div>
+    <div class="social_media_box">
+      <img src="\assets\tg.png" />
+      <img src="\assets\vk.png" />
+      <img src="\assets\ok.png" />
+
+      <button class="changeLangbtn" (click)="switchLang('en')">EN</button>
+      <button class="changeLangbtn" (click)="switchLang('ru')">RU</button>
+    </div>
+
+    <div class="adaptiv_part">
+      <div (click)="toggleMenu()" >
+        <img src="\assets\burger.png" />
+      </div>
+
+      <nav [class.open]="isMenuOpen">
+        <div class="close_icon" (click)="toggleMenu()">
+          <img src="\assets\close.png" />
+        </div>
+    
+        <ul class="mobile_menu">
+          <li class="location">
+            <img src="\assets\place.png" />
+            <p>Санкт-Петербург</p>
+            <img src="\assets\Vector (10).png" />
+          </li>
+          <li>СЛАДКИЕ ДНИ <img src="\assets\Group32.png" /></li>
+          <li routerLink="/readyKit">ГОТОВЫЕ НАБОРЫ <img src="\assets\Vector (10).png" /></li>
+          <li routerLink="/buildKit">СОБРАТЬ НАБОР</li>
+          <li routerLink="/createDesign">СОЗДАТЬ ДИЗАЙН</li>
+          <li routerLink="/companyKit">КОРПОРАТИВНЫЕ ПОДАРКИ<img src="\assets\Vector (10).png" /></li>
+          <li routerLink="/dessertCatalog">КАТАЛОГ ДЕСЕРТОВ <img src="\assets\Vector (10).png" /></li>
+        </ul>
+    
+        <ul class="secondary_links">
+          <li routerLink="/guarantee">Гарантия свежести</li>
+          <li routerLink="/delivery">Доставка и оплата</li>
+          <li>Оптовые поставки</li>
+          <li routerLink="/contacts">Контакты</li>
+    
+        </ul>
+    
+        <div class="mobile_contacts">
+          <img src="\assets\phone.png" />
+          <p>8 812 309-82-88</p>
+        </div>
+    
+        <div class="mobile_socials">
+
+          <img src="\assets\tg.png" />
+          <img src="\assets\vk.png" />
+          <img src="\assets\ok.png" />
+       
+          
+        </div>
+
+      </nav>
+
+      <div class="mini_logo">
+        <img routerLink="" src="\assets\лого.png" />
+      </div>
+      <div>
+        <img src="\assets\shopper.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="under_navbar">
+    <ul class="ul_second_box">
+      <li>{{ 'SWEET' | translate }}<img src="\assets\Group32.png" /></li>
+      <li routerLink="/readyKit">ГОТОВЫЕ НАБОРЫ <img src="\assets\Vector (10).png" /></li>
+      <li routerLink="/buildKit">СОБРАТЬ НАБОР</li>
+      <li><img routerLink="" src="\assets\лого.png" /></li>
+      <li routerLink="/createDesign">СОЗДАТЬ ДИЗАЙН</li>
+      <li routerLink="/companyKit">КОРПОРАТИВНЫЕ ПОДАРКИ<img src="\assets\Vector (10).png" /></li>
+      <li routerLink="/dessertCatalog">КАТАЛОГ ДЕСЕРТОВ <img src="\assets\Vector (10).png" /></li>
+     
+    </ul>
+  </section>
+</header>

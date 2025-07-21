@@ -1,0 +1,195 @@
+footer {
+    background-color: #ebedee;
+    padding: 5%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  /* Левая часть */
+  .footer-left {
+    width: 25%;
+  }
+  
+  .services {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .service {
+    flex: 1;
+  }
+  
+  .service img {
+    margin-bottom: 10px;
+  }
+  
+  .rights {
+    font-size: 12px;
+    color: #292929;
+    line-height: 1.4;
+  }
+  
+  /* Центр */
+  .footer-center {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 2.2;
+  }
+  
+  .footer-center ul {
+    list-style: none;
+  }
+  
+  .footer-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  /* Правая часть */
+  .footer-right {
+    width: 20%;
+    text-align: right;
+  }
+  
+  .footer-contacts .phone {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .footer-contacts .time {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  .social-media {
+    margin-top: 90px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+
+  .image_circle {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .rights2 {
+    display: none;
+  }
+
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: flex-start; /* важно — по левому краю */
+      text-align: left;
+      gap: 30px;
+      padding: 20px;
+    }
+  
+    .footer-left,
+    .footer-right {
+      width: 100%;
+    }
+
+
+  
+    .services {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+     
+    }
+  
+    .service {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+    }
+
+    .service_image {
+      width: 25%;
+    }
+  
+    .rights {
+      display: none;
+    }
+
+    .footer-center {
+      display: none;
+    }
+  
+    .footer-contacts {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 20px;
+      font-size: 12px;
+   
+    }
+  
+    .rights2 {
+      display: block;
+      max-width: 60%;
+      line-height: 1.4;
+      text-align: start;
+     
+    }
+    
+    .numbers {
+      line-height: 130%;
+    }
+  
+    .phone {
+      font-size: 14px;
+      font-weight: bold;
+      text-align: right;
+    }
+  
+    .time {
+      font-size: 12px;
+      text-align: right;
+     
+    }
+  
+    .social-media {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .image_circle {
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+  
+  
+
+ 
+  

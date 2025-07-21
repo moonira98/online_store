@@ -1,0 +1,596 @@
+.section_hero {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-image: url("/assets/Group 415 (1).png");
+    background-position: 90%;
+    position: relative;
+    background-size: cover;
+   
+}
+
+.title {
+    position: absolute;
+    z-index: 2;
+    left: 60%;
+    bottom: 320px;
+    width: 35%;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.title p {
+    font-size: 18px;
+}
+
+.section_vibori {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .section_hero {
+        display: block;
+        margin-top: 150px;
+        background-image: none;
+    }
+
+    
+    .title {
+        position: absolute;
+        z-index: 2;
+        top: -110px; /* Вместо bottom */
+        left: 10%;
+        width: 80%;
+      }
+   
+      
+
+h1 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.title p {
+    font-size: 14px;
+}
+
+.section_hero_image {
+    margin-top: 50px;
+}
+
+.section_hero_image img {
+    padding-left: 90px;
+    
+}
+
+  }
+
+
+.section_choices {
+    display: grid;
+    padding: 0 5%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    text-align: center;
+    padding: 36px 53px 35px 54px;
+    position: relative;
+    background-color: #FFDBC3; /* основной фон */
+    overflow: hidden;
+  }
+  
+  .box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(153deg, rgba(255, 255, 255, 0.3) 50%, transparent 50%);
+    pointer-events: none;
+  }
+
+
+  .second { background-color: #FFC2CC; }  /* розовый */
+  .third  { background-color: #B4EAB3; }  /* зелёный */
+  .fourth { background-color: #FDD5CD; }  /* светло-персиковый */
+  .fifth  { background-color: #A8DCDF; }  /* голубой */
+  .six    { background-color: #C4C6EC; }  /* сиреневый */
+
+
+h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h4 img  {
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .section_choices {
+        display: none;
+    }
+
+    .section_vibori {
+        display: block;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 0;
+    }
+
+    .vibor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        padding-bottom: 16.58px;
+        padding-top: 16.42px;
+        border-bottom: 2px solid #29292929;
+    }
+    
+ }
+
+
+.sections_sales {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sections_sales h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.sale_boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sale_box {
+    width: 23%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* X, Y, blur, прозрачность */
+    border-radius: 12px; /* можно добавить скругление */
+    background-color: white; /* фон обязателен, иначе тень не будет видна */
+    padding-bottom: 3px;
+}
+
+.sale_box img {
+    display: block;
+    margin-bottom: 0;
+}
+
+.sale_type {
+    background-color: #90C8F0;
+    font-size: 14px;
+    color: white
+}
+
+.sale_box p {
+    margin: 20px;
+}
+
+.kvadratiki {
+    margin-top: 32px;
+    display: flex;
+    width: 5%;
+    justify-content: space-between;
+    margin-left: 1025px;
+}
+
+.kvadrat {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #E5E5E5
+}
+
+.first_kvadratik {
+    background-color: #E7426A;
+}
+
+@media (max-width: 768px) {
+    .sections_sales {
+        display: block;
+    }
+
+    .sale_boxes {
+        display: block;
+        margin-top: 17px;
+    }
+
+    .sections_sales h3 {
+        font-size: 24px;
+    }
+
+    .first_sale_box {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .other_sale_box {
+        display: none;
+       
+    }
+
+    .sale_box img {
+        width: 100%;
+    }
+
+    .sale_box p  {
+       width: 30%;
+       margin-left: 160px;
+       font-size: 13px;
+       font-weight: 600;
+    }
+
+    .kvadratiki {
+       margin-left:200px;
+       width: 10%;
+    }
+  }
+
+
+.section-macarons {
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin-top: 93px;
+}
+
+.section-macarons h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.line {
+    position: absolute;
+    top: 65%; /* или 58–62% — подбери визуально */
+    right: 1px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.line img {
+    width: 80%;
+}
+
+.macarons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    align-items: flex-end;
+}
+
+.macaron {
+    width: 15%;
+    font-weight: 600;
+}
+
+.macaron img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+
+    .section-macarons {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .section-macarons h3 {
+        font-size: 18px;
+    }
+
+    .macarons {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      position: relative;
+      gap: 40px;
+      margin-top: 40px;
+      margin-left:  70px;
+    }
+  
+    .macaron {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      max-width: 300px;
+      gap: 16px;
+      position: relative;
+    }
+  
+    .macaron img {
+      width: 90px;
+      height: auto;
+    }
+  
+    .macaron::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 30px;
+      width: 2px;
+      height: 50px;
+      background: repeating-linear-gradient(
+        to bottom,
+        #ccc,
+        #ccc 2px,
+        transparent 2px,
+        transparent 8px
+      );
+    }
+  
+    .macaron:last-child::after {
+      content: none;
+    }
+  
+    .line {
+      display: none;
+    }
+
+    .non-visicle-mac {
+        display: none;
+    }
+  
+    .section-macarons h3 {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+  
+  
+
+.section_popular {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 108px;
+}
+
+.section_popular h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 42px;
+    text-align: center;
+    display: block;
+}
+
+.interface_choose {
+    display: none;
+}
+
+.popular_cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.popular_card {
+    width: 32%;
+    border: 1px solid #EDEDF0;
+    border-radius: 10px;
+}
+
+.popular_card img {
+    display: block;
+    margin-bottom: 0;
+}
+
+.popular_info {
+    margin-left: 21px;
+    margin-top: 21px;
+}
+
+.pop_title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 100% ;
+}
+
+.pop_subtitle {
+    color: #292929;
+    font-size: 14px;
+    line-height: 100%;
+    padding-right: 20px;
+}
+
+.popular_purchase {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px #EDEDF0;
+}
+
+.korzina {
+    width: 45%;
+    display: flex;
+    gap: 10px;
+    font-size: 14px ;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+}
+
+.korzina p {
+    margin-top: 6px;
+}
+
+.korzina img {
+    width: 13.29px;
+    height: 19px;
+    margin-left: 23px;
+}
+
+.price {
+    width: 55%;
+    margin-left: 21px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #E7426A;
+    font-weight: 600;
+    border-right: 1px solid #EDEDF0;
+}
+
+.getAll {
+    display: flex;
+    justify-content: center;
+}
+
+.getAll_button {
+    padding: 17.3px 49px 18.3px 48px;
+    background-color: white;
+    border: 1px solid #4E9DD3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 35px ;
+}
+
+.buy {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .section_popular h3  {
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+
+    .interface_choose {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .popular_card {
+            width: 46%;
+            margin-top: 20px;
+     }
+
+     .popular_cards.grid {
+        flex-direction: row;
+      }
+
+      .popular_cards.grid .buy {
+        display: none;
+      }
+      
+      .popular_cards.list {
+        flex-direction: column;
+      }
+      
+      .popular_cards.list .popular_card {
+        width: 100%;
+      }
+
+      .popular_cards.list  .popular_card_image {
+        width: 100%;
+      }
+
+      .popular_cards.list .buy {
+        display: block;
+        font-size: 15px;
+        margin-left: 6px;
+      }
+
+     .popular_card_image {
+        padding: 10px 10px 0 10px;
+     }
+
+     .price {
+        width: 80%;
+     }
+
+    
+    .korzina p {
+        display: none;
+    }
+
+    .active-icon {
+        filter: none;
+        opacity: 1;
+      }
+      
+      .inactive-icon {
+        filter: grayscale(100%) brightness(0.7);
+        opacity: 0.6;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      
+
+}
+
+.news_subtitle {
+    padding-bottom: 80px;
+}
+
+.dates {
+    margin-bottom: 10px;
+}
+
+.last_card {
+    width: 23%;
+    border: none;
+}
+
+.last_popular_info {
+    margin-left: 0;
+}
+
+
+@media (max-width: 768px) {
+    .third_news {
+        display: none;
+    }
+
+    .last_card {
+        width: 45%;
+        
+    }
+
+    .news_subtitle {
+        padding-bottom: 5px;
+    }
+
+    .last_cards {
+        padding-bottom: 50px;
+    }
+ }
+
+
+
+
+
+
+
+
+
